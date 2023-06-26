@@ -34,6 +34,16 @@ typedef enum
     OUTPUT,
 } Digital_GPIO_Mode ; 
 
-
+typedef enum 
+{
+    IO_00,
+    IO_01,
+    IO_02,
+    IO_03,
+    IO_04,
+    IO_05,
+    IO_06,
+    IO_07,
+} IO ;
 
 #endif
