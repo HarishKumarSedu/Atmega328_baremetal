@@ -20,6 +20,7 @@
 #define BITRESET(REG,BITMASK)   (REG |= ~BITMASK)
 #define BITFLIP(REG,BITMASK)    (REG ^= BITMASK)
 
+#define FCPU 16000000UL
 
 typedef enum 
 {

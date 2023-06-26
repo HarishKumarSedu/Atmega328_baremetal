@@ -89,7 +89,12 @@ int USART_PutChar(char C) {
 
 void _putchar(char C) {
     while (!(UCSR0A & UCSR0A_UDRE0));
+    
     UDR0 = C;
+    if (C == '\n')
+    {
+        _putchar('\r');
+    }
 }
 
 

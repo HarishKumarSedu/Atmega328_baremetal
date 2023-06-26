@@ -20,7 +20,7 @@
 
 #include "external/printf_config.h"
 
-#define FCPU 16000000UL
+
 
 #define RX_BUFFER_SIZE 128
 
