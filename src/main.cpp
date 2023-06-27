@@ -7,6 +7,6 @@ int main()
 	while(1)
 	{
         LED_Toggle();
-		delay_ms(1000);
+		delay_ms(500);
 	}	
 }

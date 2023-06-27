@@ -56,11 +56,5 @@ void GPIO_Init(IO Pin,uint8_t * Reg, Digital_GPIO_Mode Mode);
 void GPIO_Write(uint8_t pin, uint8_t * Reg, Digital_GPIO_Values value );
 void GPIO_Toggle(uint8_t Pin, uint8_t * Reg);
 
-void pinMode(uint8_t pin, Digital_GPIO_Mode mode); 
-void digitalWrite(uint8_t pin, Digital_GPIO_Values value) ;
-void digitalToggle(uint8_t pin) ;
-Digital_GPIO_Values digitalRead(uint8_t pin) ;
-
-void HAL_GPIO_Init(GPIO_Init_TypeDef * GPIOx) ;
 
 #endif
