@@ -21,5 +21,5 @@
 
 void Timer0_Init() ;
 void delay(uint16_t ms)  ;
-
+void delay_ms(uint16_t ms) ;
 #endif

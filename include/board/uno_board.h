@@ -37,6 +37,8 @@ typedef enum
     PB03=IO_03,
     PB04=IO_04,
     PB05=IO_05,
+    PB06=IO_06,
+    PB07=IO_07,
 
     // Port C 
     PC00=IO_00,
@@ -45,10 +47,11 @@ typedef enum
     PC03=IO_03,
     PC04=IO_04,
     PC05=IO_05,
-} UNO_Board_PinConfigurations ; 
+    PC06=IO_06,
+    PC07=IO_07,
+} UNO_Board_PinConfigurationsx ; 
 
 typedef enum
-
 {
 
     ADC0=PC00,
@@ -58,7 +61,45 @@ typedef enum
     ADC4=PC04,
     ADC5=PC05,
 
-} UNO_Analog_Pinx
+} UNO_Analog_Pinx ; 
+
+typedef enum
+{
+
+    Digi0=PD00,
+    Digi1=PD01,
+    Digi2=PD02,
+    Digi3=PD03,
+    Digi4=PD04,
+    Digi5=PD05,
+    Digi6=PD06,
+    Digi7=PD07,
+
+    Digi8=PB00,
+    Digi9=PB01,
+    Digi10=PB02,
+    Digi11=PB03,
+    Digi12=PB04,
+    Digi13=PB05,
+
+} UNO_Digital_Pinx ; 
+
+
+
+typedef enum
+{
+    SCL=PC05,
+    SDA=PC04,
+
+} UNO_I2C_Pinx ; 
+
+typedef enum
+{
+    TX=PC05,
+    RX=PC04,
+
+} UNO_UART_Pinx ; 
+
 
 
 #endif

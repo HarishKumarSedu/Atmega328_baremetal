@@ -1,21 +1,12 @@
-
-#include <stdio.h>
-#include "usart.h"
-#include "gpio.h"
 #include "systick.h"
-
-#define LED 5
+#include "gpio.h"
 
 int main()
 {
-	 pinMode(LED,OUTPUT);
-
+	LED_Init();
 	while(1)
-	{		
-
-
-        digitalToggle(LED);
-        delay(1000);			 		 
+	{
+        LED_Toggle();
+		delay_ms(1000);
 	}	
 }
-

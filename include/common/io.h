@@ -17,7 +17,7 @@
 #define __IO volatile
 
 #define BITSET(REG,BITMASK)     (REG |= BITMASK)
-#define BITRESET(REG,BITMASK)   (REG |= ~BITMASK)
+#define BITRESET(REG,BITMASK)   (REG &= ~BITMASK)
 #define BITFLIP(REG,BITMASK)    (REG ^= BITMASK)
 
 #define FCPU 16000000UL
@@ -45,5 +45,11 @@ typedef enum
     IO_06,
     IO_07,
 } IO ;
+
+typedef enum
+{
+    False,
+    True,
+} State ;
 
 #endif
