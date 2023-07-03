@@ -9,14 +9,9 @@ class LSM6D3Reg :
         self.regData = self.regData.parse(sheet_name='Table')
         self.regData.drop([0,1],inplace=True)
 
-        # print(self.regData.head)
-        # print(self.regData.columns)
-
         # # Columns 
         # ['Register name', 'Address', 'Bit7', 'Bit6', 'Bit5', 'Bit4', 'Bit3','Bit2', 'Bit1', 'Bit0']
 
-        # print(self.regData)
-    
     def LSM6D3_HeaderFile(self):
         with open('lsm6d3base.h', 'w') as file:
             file.write(f'#ifndef LSM6D3_BASE_H__\n')
@@ -104,9 +99,6 @@ class LSM6D3Reg :
                         file.write(f'#define {bit0} (uint8_t)(1UL << {bit0}_pos) \n')
 
             file.write(f'#endif\n')
-
- 
-        
 
 if __name__ == '__main__':
 
